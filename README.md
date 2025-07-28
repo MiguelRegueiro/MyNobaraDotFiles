@@ -120,6 +120,3 @@ UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   /mnt/2tbmdot2  ntfs-3g  uid=1000,gid
 * Configured for **Nobara Linux**, but most parts are portable to other GNOME/Fedora-based systems.
 * Always back up critical configs like `/etc/fstab` before editing.
 
----
-
-Would you like this saved as a `README.md` file now?
