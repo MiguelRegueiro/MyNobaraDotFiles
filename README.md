@@ -114,7 +114,8 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 ---
 
-## 🌐 Remote Access (SSH)
+## 🌐 Remote Access (SSH) to your server using tailscale or  similar
+Onece ur computer and server are connected to ur vpn:
 
 Set up an SSH alias for convenience. Add this to `~/.bashrc`:
 
@@ -127,9 +128,6 @@ Apply changes:
 ```bash
 source ~/.bashrc
 ```
-
----
-Here's a refined version of your MPV Language Immersion Config section with better organization and clarity:
 
 ---
 
