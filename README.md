@@ -1,7 +1,3 @@
-Perfect — with your updated `fstab` and theme links, here is the revised and complete `README.md` for your **MyNobaraDotFiles** repo:
-
----
-
 # MyNobaraDotFiles
 
 Personal dotfiles, fonts, GNOME themes, and system tweaks for my setup on **Nobara Linux** (Fedora-based).
