@@ -1,0 +1,12 @@
+paste in the terminal
+
+
+nano ~/.bashrc
+
+
+alias sshserver='ssh regueiro@100.108.179.88'
+
+
+
+
+this sets an alias, now when u type sshserver it does ssh regueiro@100.108.179.88
