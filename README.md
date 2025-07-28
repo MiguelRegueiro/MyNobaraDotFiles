@@ -134,19 +134,22 @@ source ~/.bashrc
 
 For watching shows/movies with **dual subtitles** and advanced language-learning features:
 
-1. Clone the config:
+Use the provided folder MyNobaraDotFiles/MPV-Language-Immersion-config-main/
+or:
+
+Clone the config:
 
    ```bash
    git clone https://github.com/MiguelRegueiro/MPV-Language-Immersion-config.git
    ```
 
-2. Install to the correct location:
+Install to the correct location:
 
    * Native: `~/.config/mpv/`
    * Flatpak: `~/.var/app/io.mpv.Mpv/config/mpv/`
    * Windows: `%APPDATA%\mpv\`
 
-> Includes keybindings, dual subtitles, and pause-on-hover features.
+> A customized MPV configuration for language immersion, featuring autoplay and language preferences for seamless language learning. As a personal config it is configured for Japanese, Chinese (simplified), Portuguese, Russian, English and Spanish.
 
 ---
 
@@ -165,11 +168,10 @@ For watching shows/movies with **dual subtitles** and advanced language-learning
    * etc.
 
 3. Apply GNOME settings:
-
    ```bash
-   # Alt+Tab tweak
-   # Battery percentage
+   # See GNOME Desktop Tweaks section for commands →
    ```
+   [→ Jump to GNOME Tweaks](#-gnome-desktop-tweaks)
 
 ---
 
