@@ -27,7 +27,7 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 ### 🛠️ Tools
 
 * 🔐 Handy SSH server alias for quick remote access
-* 🎬 MPV player dual-subtitle configuration
+* 🎬 MPV player configuration for language immersion
 * 🅰️ Fonts for Anki cards (Chinese and japanese fonts)
 
 ---
