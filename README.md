@@ -1,29 +1,33 @@
-# MyNobaraDotFiles
+# 🚀 MyNobaraDotFiles
 
-Custom dotfiles and system tweaks tailored for **Nobara Linux** (Fedora-based).
-This setup enhances your **GNOME desktop**, improves **terminal experience**, and optimizes your system for **gaming, remote access, and language learning**.
+**Custom dotfiles and system tweaks tailored for *Nobara Linux*** (Fedora-based).
+This setup enhances your **GNOME desktop**, improves your **terminal experience**, and optimizes your system for **gaming, remote access, and language learning**.
 
 ---
 
 ## 📦 Included Configurations
 
-* **Terminal**:  
-  - Kitty setup  
-  - Starship prompt (with custom Nobara/Fedora logos)  
+### 🎛️ Terminal
 
-* **Gaming**:  
-  - MangoHud fixes  
-  - NTFS game drive auto-mount  
+* 🐱 **Kitty** terminal setup
+* ⭐ **Starship prompt** with custom Nobara/Fedora logos
 
-* **GNOME**:  
-  - Alt+Tab & battery tweaks  
-  - WhiteSur theme + MacTahoe icons + Bibata cursor  
-  - Included wallpaper (`media/wallpaper.jpg`)  
-  - GNOME extensions  
+### 🎮 Gaming
 
-* **Tools**:  
-  - SSH server alias  
-  - MPV dual-subtitle config  
+* 🛠️ MangoHud fixes for better in-game overlays
+* 🔌 NTFS game drive auto-mount for seamless access
+
+### 🖥️ GNOME
+
+* 🔄 Tweaked **Alt+Tab** behavior & battery optimizations
+* 🎨 **WhiteSur theme** + **MacTahoe icons** + **Bibata cursor** for a sleek UI
+* 🖼️ Included wallpaper: `media/wallpaper.jpg`
+* 🧩 Essential GNOME extensions preconfigured
+
+### 🛠️ Tools
+
+* 🔐 Handy SSH server alias for quick remote access
+* 🎬 MPV player dual-subtitle configuration
 
 ---
 
