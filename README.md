@@ -32,6 +32,17 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 
 ---
 
+### 📸 GNOME Desktop Screenshot
+
+#### 🖥️ Desktop with Terminal
+
+A look at my customized GNOME desktop with `kitty` terminal open:
+
+![My GNOME Desktop with Kitty](media/screenshot-terminal.png)
+
+---
+
+
 ## 🖥 Terminal & CLI Tools
 
 ### 🔹 Kitty Terminal
@@ -253,15 +264,7 @@ Would you like me to make any additional adjustments to this section?
 
 ---
 
-### 📸 GNOME Desktop Screenshots
 
-#### 🖥️ Desktop with Terminal
-
-A look at my customized GNOME desktop with `kitty` terminal open:
-
-![My GNOME Desktop with Kitty](media/screenshot-terminal.png)
-
----
 
 #### Extension Manager Open
 
