@@ -22,7 +22,7 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 * 🔄 Tweaked **Alt+Tab** behavior & battery optimizations
 * 🎨 **WhiteSur theme** + **MacTahoe icons** + **Bibata cursor** for a sleek UI
 * 🖼️ Included wallpaper: `media/wallpaper.jpg`
-* 🧩 Essential GNOME extensions [→ Jump to GNOME Tweaks](####Extension Manager Open)
+* 🧩 Essential GNOME extensions [View recommended extensions in Extension Manager →](#extension-manager-open)
 
 ### 🛠️ Tools
 
