@@ -129,29 +129,57 @@ source ~/.bashrc
 ```
 
 ---
+Here's a refined version of your MPV Language Immersion Config section with better organization and clarity:
 
-## 🎥 MPV Language Immersion Config
+---
 
-For watching shows/movies with **dual subtitles** and advanced language-learning features:
+## 🎥 MPV Language Immersion Configuration
 
-Use the provided folder MyNobaraDotFiles/MPV-Language-Immersion-config-main/
-or:
+**Enhanced media playback for language learning** with dual subtitles, automatic playback, and language-specific presets.
 
-Clone the config:
+### 📂 Installation Options
 
+1. **Use included config** (recommended):
+   - Copy files from:
+     ```
+     MyNobaraDotFiles/MPV-Language-Immersion-config-main/
+     ```
+   - To your MPV config directory based on your installation type:
+
+2. **Alternative installation** (manual clone):
    ```bash
    git clone https://github.com/MiguelRegueiro/MPV-Language-Immersion-config.git
    ```
 
-Install to the correct location:
+### 📌 Installation Paths
+| Installation Type | Config Location                          |
+|-------------------|-----------------------------------------|
+| Native Linux      | `~/.config/mpv/`                        |
+| Flatpak           | `~/.var/app/io.mpv.Mpv/config/mpv/`     |
+| Windows           | `%APPDATA%\mpv\`                        |
 
-   * Native: `~/.config/mpv/`
-   * Flatpak: `~/.var/app/io.mpv.Mpv/config/mpv/`
-   * Windows: `%APPDATA%\mpv\`
+### 🌍 Language Support
+Pre-configured for optimal experience with:
+- 日本語 (Japanese)
+- 简体中文 (Chinese Simplified)
+- Português (Portuguese)
+- Русский (Russian)
+- English
+- Español (Spanish)
 
-> A customized MPV configuration for language immersion, featuring autoplay and language preferences for seamless language learning. As a personal config it is configured for Japanese, Chinese (simplified), Portuguese, Russian, English and Spanish.
+### ✨ Key Features
+- **Dual subtitle display** (primary + translation)
+- **Autoplay functionality** for immersion sessions
+- **Language-specific presets**:
+  - Preferred audio tracks
+  - Subtitle styling
+  - Keyboard shortcuts
+- **Smart pause/resume** behavior
 
----
+> Note: This is a personalized configuration that may need adjustment for your specific language learning needs.
+
+
+Would you like me to make any additional adjustments to this section?
 
 ## 🛠️ How to Use This Repo
 
