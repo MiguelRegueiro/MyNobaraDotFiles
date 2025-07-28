@@ -8,7 +8,7 @@ This setup enhances your **GNOME desktop**, improves **terminal experience**, an
 ## 📦 Included Configurations
 
 * Kitty terminal setup
-* Starship prompt theme
+* Starship prompt theme (includes custom logo png for Nobara and Fedora)
 * MangoHud performance overlay
 * GNOME visual and behavior tweaks
 * Auto-mounting NTFS external game drive
