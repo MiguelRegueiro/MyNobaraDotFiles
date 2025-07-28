@@ -1,122 +1,206 @@
 # MyNobaraDotFiles
 
-Personal dotfiles, fonts, GNOME themes, and system tweaks for my setup on **Nobara Linux** (Fedora-based).
-This repo includes configs for terminal tools, GUI enhancements, fonts for language learning, and system usability fixes.
+Custom dotfiles and system tweaks tailored for **Nobara Linux** (Fedora-based).
+This setup enhances your **GNOME desktop**, improves **terminal experience**, and optimizes your system for **gaming, remote access, and language learning**.
 
 ---
 
-## 📁 What's Inside
+## 📦 Included Configurations
 
-### 🖥 Terminal & CLI Tools
-
-* **Kitty**: Custom configuration for the `kitty` terminal emulator.
-* **Fastfetch**: Modified logos for **Fedora** and **Nobara** included.
-* **MangoHud**: Performance overlay settings for monitoring GPU/CPU stats.
-* **Starship**: My personal `starship.toml` config for a clean, useful shell prompt.
-
----
-
-### 🔤 Fonts for Anki
-
-Fonts used specifically with **Anki** to support proper rendering of:
-
-* 🈶 **Japanese**
-* 🇨🇳 **Chinese**
-
-> Note: Fonts are included only if the license allows redistribution.
+* Kitty terminal setup
+* Starship prompt theme
+* MangoHud performance overlay
+* GNOME visual and behavior tweaks
+* Auto-mounting NTFS external game drive
+* SSH alias setup
+* MPV immersion playback config
 
 ---
 
-### 🎨 GNOME Look & Feel
+## 🖥 Terminal & CLI Tools
 
-These are the themes I use for a modern, macOS-inspired desktop experience on GNOME:
+### 🔹 Kitty Terminal
 
-| Component        | Theme Name            | Source                                                                  |
-| ---------------- | --------------------- | ----------------------------------------------------------------------- |
-| **Shell Theme**  | WhiteSur-Dark         | [WhiteSur GTK Theme](https://github.com/vinceliuice/WhiteSur-gtk-theme) |
-| **Icon Theme**   | MacTahoe-icon-theme   | [MacTahoe Icons](https://github.com/vinceliuice/MacTahoe-icon-theme)    |
-| **Cursor Theme** | Bibata-Modern-Classic | [Bibata Cursors](https://github.com/ful1e5/Bibata_Cursor)               |
+* Config: `~/.config/kitty/kitty.conf`
+* Clean, minimal, and readable layout optimized for daily use
 
-> 💡 These are placed in the `themes/` folder. You can install them manually or use the included files.
+### 🔹 Starship Prompt
 
----
+* Config: `~/.config/starship.toml`
+* Features:
 
-### ⚙️ GNOME Usability Tweaks
-
-* **`Fix alttab Gnome.txt`**
-  Enables multiple **individual window instances** in the Alt+Tab switcher (instead of grouping by app).
-
-* **`Fix batery porcentage Gnome.txt`**
-  Shows the **battery percentage** in GNOME’s top bar.
-
-Use GNOME Tweaks or `gsettings` to apply these changes.
+  * Git status
+  * Conda environments
+  * Execution time
+  * Battery indicator (on supported setups)
 
 ---
 
-### 💾 fstab Configuration for External Game Drive
+## 📊 Performance Monitoring
 
-Included: `fstab_Nobara_Steam external drive`
+### 🔸 MangoHud (for gaming overlays)
 
-Automatically mounts a **2TB NVMe M.2 external drive** (in a USB-C enclosure) formatted with **NTFS**. Useful for storing and launching Steam games directly.
+* Enable per-game:
+
+  ```bash
+  MANGOHUD=1 gamemoderun %command%
+  ```
+* GPU selection (via GOverlay):
+
+  * Go to **Visual Settings**
+  * Set correct PCI GPU (e.g. `1:00.0` for NVIDIA)
+
+---
+
+## 🖼 GNOME Desktop Tweaks
+
+### 🎛 Behavior Fixes
+
+**Restore traditional Alt+Tab (individual windows, not grouped by app):**
 
 ```bash
-# /etc/fstab: static file system information.
-#
-# Add this:
-# change xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx with your drive's UUID
-# BE VERY CAREFUL AND DOUBLE CHECK
-# IF YOU MESS UP YOUR /etc/fstab YOUR SYSTEM MAY NOT BOOT
-
-# m.2 with games
-# To find the UUID of your drive, run:
-#   sudo blkid
-
-# Look for the line with your drive's device name (e.g. /dev/sdX or /dev/nvmeXn1pX)
-# You can change /2tbmdot2 with whatever mount point you prefer
-UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   /mnt/2tbmdot2  ntfs-3g  uid=1000,gid=1000,rw,exec,umask=000,nofail,x-gvfs-show  0  0
-
-# Make sure /mnt/2tbmdot2 exists before rebooting:
-#   sudo mkdir -p /mnt/2tbmdot2
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 ```
 
-> 🔧 Requires `ntfs-3g` to be installed for NTFS mounting.
+**Show battery percentage in top bar:**
+
+```bash
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+```
 
 ---
 
-### 📡 Other
+### 🎨 Visual Style
 
-* **`sshserver instrucions`**: Quick notes for setting up an SSH server on your system.
+#### 🔸 Themes Used
+
+| Component  | Theme                 | Source Link                                                               |
+| ---------- | --------------------- | ------------------------------------------------------------------------- |
+| GTK Theme  | WhiteSur-Dark         | [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)   |
+| Icon Theme | MacTahoe              | [MacTahoe-icon-theme](https://github.com/vinceliuice/MacTahoe-icon-theme) |
+| Cursor     | Bibata Modern Classic | [Bibata Cursor](https://github.com/ful1e5/Bibata_Cursor)                  |
+
+> Install these manually or using their provided install scripts.
 
 ---
 
-## 🛠 Setup Instructions
+## 🎮 External Game Drive Setup (NTFS)
 
-1. **Clone the repo**:
+### Use Case: Mounting a 2TB M.2 external drive for Steam game storage
+
+1. Find UUID of the drive:
+
+   ```bash
+   sudo blkid
+   ```
+
+2. Add this to `/etc/fstab` (replace `xxxx-...` with actual UUID):
+
+   ```bash
+   UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  /mnt/gamedrive  ntfs-3g  uid=1000,gid=1000,rw,exec,umask=000,nofail,x-gvfs-show  0  0
+   ```
+
+3. Create mount point:
+
+   ```bash
+   sudo mkdir -p /mnt/gamedrive
+   ```
+
+> ⚠️ **Backup your `/etc/fstab`** before editing. Mistakes can prevent your system from booting.
+
+---
+
+## 🌐 Remote Access (SSH)
+
+Set up an SSH alias for convenience. Add this to `~/.bashrc`:
+
+```bash
+alias sshserver='ssh username@hostname'
+```
+
+Apply changes:
+
+```bash
+source ~/.bashrc
+```
+
+---
+
+## 🎥 MPV Language Immersion Config
+
+For watching shows/movies with **dual subtitles** and advanced language-learning features:
+
+1. Clone the config:
+
+   ```bash
+   git clone https://github.com/MiguelRegueiro/MPV-Language-Immersion-config.git
+   ```
+
+2. Install to the correct location:
+
+   * Native: `~/.config/mpv/`
+   * Flatpak: `~/.var/app/io.mpv.Mpv/config/mpv/`
+   * Windows: `%APPDATA%\mpv\`
+
+> Includes keybindings, dual subtitles, and pause-on-hover features.
+
+---
+
+## 🛠️ How to Use This Repo
+
+1. Clone:
 
    ```bash
    git clone https://github.com/yourusername/MyNobaraDotFiles.git
    ```
 
-2. **Copy or link** the configs, fonts, or themes you want to use.
+2. Copy over desired configs to:
 
-3. **Apply themes** using GNOME Tweaks:
+   * `~/.config/kitty/`
+   * `~/.config/starship.toml`
+   * etc.
 
-   * Set Shell: WhiteSur-Dark
-   * Set Icons: MacTahoe
-   * Set Cursor: Bibata Modern Classic
+3. Apply GNOME settings:
 
-4. **Apply GNOME tweaks** by following the instructions in the `.txt` files.
-
-5. **Mount drive**:
-
-   * Update the UUID in the `fstab` snippet
-   * Create the mount directory if it doesn’t exist
-   * Reboot or run `sudo mount -a` to test
+   ```bash
+   # Alt+Tab tweak
+   # Battery percentage
+   ```
 
 ---
 
-## 📌 Notes
+### 📸 GNOME Desktop Screenshots
 
-* Configured for **Nobara Linux**, but most parts are portable to other GNOME/Fedora-based systems.
-* Always back up critical configs like `/etc/fstab` before editing.
+#### 🖥️ Desktop with Terminal
 
+A look at my customized GNOME desktop with `kitty` terminal open:
+
+![My GNOME Desktop with Kitty](media/screenshot-terminal.png)
+
+---
+
+#### 🧩 Extension Manager Open
+
+A preview of all installed GNOME extensions inside **Extension Manager**:
+
+![GNOME Extensions via Extension Manager](media/extensions-view.png)
+
+---
+
+
+## ⚠️ Notes & Compatibility
+
+* These configs were built and tested on **Nobara Linux**, but most will work on:
+
+  * Fedora GNOME
+  * Other systemd-based distros using GNOME
+* Some parts (like `fstab`, MangoHud) require additional packages like:
+
+  * `ntfs-3g`
+  * `gamemode`
+  * `mangohud`
+
+---
