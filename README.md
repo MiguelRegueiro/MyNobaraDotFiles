@@ -102,7 +102,6 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
    ```bash
    UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  /mnt/gamedrive  ntfs-3g  uid=1000,gid=1000,rw,exec,umask=000,nofail,x-gvfs-show  0  0
    ```
-   Do this with caution and at your own risk.
 
 3. Create mount point:
 
@@ -111,6 +110,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
    ```
 
 > ⚠️ **Backup your `/etc/fstab`** before editing. Mistakes can prevent your system from booting.
+>  Do this with caution and at your own risk.
 
 ---
 
