@@ -7,13 +7,23 @@ This setup enhances your **GNOME desktop**, improves **terminal experience**, an
 
 ## 📦 Included Configurations
 
-* Kitty terminal setup
-* Starship prompt theme (includes custom logo png for Nobara and Fedora)
-* MangoHud performance overlay
-* GNOME visual and behavior tweaks
-* Auto-mounting NTFS external game drive
-* SSH alias setup
-* MPV immersion playback config
+* **Terminal**:  
+  - Kitty setup  
+  - Starship prompt (with custom Nobara/Fedora logos)  
+
+* **Gaming**:  
+  - MangoHud fixes  
+  - NTFS game drive auto-mount  
+
+* **GNOME**:  
+  - Alt+Tab & battery tweaks  
+  - WhiteSur theme + MacTahoe icons + Bibata cursor  
+  - Included wallpaper (`media/wallpaper.jpg`)  
+  - GNOME extensions  
+
+* **Tools**:  
+  - SSH server alias  
+  - MPV dual-subtitle config  
 
 ---
 
@@ -79,6 +89,16 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 ### 🎨 Visual Style
 
+#### 🛠️ Prerequisites
+1. Install required tools:
+   ```bash
+   sudo dnf install gnome-tweaks
+   ```
+2. Enable **User Themes** extension:
+   - Open Extensions app (`gnome-extensions-app`)
+   - Search for "User Themes"
+   - Enable the extension
+
 #### 🔸 Themes Used
 
 | Component  | Theme                 | Source Link                                                               |
@@ -88,6 +108,29 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 | Cursor     | Bibata Modern Classic | [Bibata Cursor](https://github.com/ful1e5/Bibata_Cursor)                  |
 
 > Install these manually or using their provided install scripts.
+
+  
+1. Open **GNOME Tweaks**
+2. Navigate to "Appearance" tab
+3. Set:
+
+   | Setting       | Value                  |
+   |---------------|------------------------|
+   | Cursor        | Bibata-Modern-Classic  |
+   | Icons         | MacTahoe-dark          |
+   | Shell         | WhiteSur-Dark          |
+   | Legacy Applications  | WhiteSur-Dark   |
+
+
+### 🖼️ Included Wallpaper
+![Default Wallpaper](media/wallpaper.jpg)  
+Located in `media/wallpaper.jpg` - set as your desktop background for the complete look.
+**To set wallpaper:**
+1. Right-click desktop → "Change Background"
+2. Select "Wallpapers" tab
+3. Click "+" to add `media/wallpaper.jpg`
+4. Select your new wallpaper
+
 
 ---
 
