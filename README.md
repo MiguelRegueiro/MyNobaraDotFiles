@@ -38,6 +38,11 @@ This setup enhances your **GNOME desktop**, improves **terminal experience**, an
 
 ## 📊 Performance Monitoring
 
+* Enable:
+  ```bash
+  MANGOHUD=1
+  ```
+
 ### 🔸 MangoHud (for gaming overlays)
 
 * Enable per-game:
