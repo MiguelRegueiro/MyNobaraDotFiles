@@ -22,7 +22,7 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 * 🔄 Tweaked **Alt+Tab** behavior & battery optimizations
 * 🎨 **WhiteSur theme** + **MacTahoe icons** + **Bibata cursor** for a sleek UI
 * 🖼️ Included wallpaper: `media/wallpaper.jpg`
-* 🧩 Essential GNOME extensions [View recommended extensions in Extension Manager →](#🧩extension-manager-open)
+* 🧩 Essential GNOME extensions [View recommended extensions in Extension Manager →](#extension-manager-open)
 
 ### 🛠️ Tools
 
@@ -262,7 +262,7 @@ A look at my customized GNOME desktop with `kitty` terminal open:
 
 ---
 
-#### 🧩 Extension Manager Open
+#### Extension Manager Open
 
 A preview of all installed GNOME extensions inside **Extension Manager**:
 
