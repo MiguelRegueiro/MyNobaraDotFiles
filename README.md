@@ -247,7 +247,7 @@ Would you like me to make any additional adjustments to this section?
 1. Clone:
 
    ```bash
-   git clone https://github.com/yourusername/MyNobaraDotFiles.git
+   git clone https://github.com/MiguelRegueiro/MyNobaraDotFiles
    ```
 
 2. Copy over desired configs to:
