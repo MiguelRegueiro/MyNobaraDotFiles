@@ -198,6 +198,13 @@ source ~/.bashrc
 
 **Enhanced media playback for language learning** with automatic playback, and language-specific presets.
 
+### 📌 Installation Paths
+| Installation Type | Config Location                          |
+|-------------------|-----------------------------------------|
+| Native Linux      | `~/.config/mpv/`                        |
+| Flatpak           | `~/.var/app/io.mpv.Mpv/config/mpv/`     |
+| Windows           | `%APPDATA%\mpv\`                        |
+
 
 ### **1️⃣ Install Native MPV (Recommended)**
 ```bash
@@ -222,14 +229,8 @@ sudo dnf install libva-intel-driver libva-utils mesa-vdpau-drivers
 ```bash
 # Create config directory
 mkdir -p ~/.config/mpv
+```
 
-
-### 📌 Installation Paths
-| Installation Type | Config Location                          |
-|-------------------|-----------------------------------------|
-| Native Linux      | `~/.config/mpv/`                        |
-| Flatpak           | `~/.var/app/io.mpv.Mpv/config/mpv/`     |
-| Windows           | `%APPDATA%\mpv\`                        |
 
 ### 🌍 Language Support
 Pre-configured for optimal experience with:
@@ -241,12 +242,10 @@ Pre-configured for optimal experience with:
 - Español (Spanish)
 
 ### ✨ Key Features
-- **Dual subtitle display** (primary + translation)
 - **Autoplay functionality** for immersion sessions
 - **Language-specific presets**:
   - Preferred audio tracks
   - Subtitle styling
-  - Keyboard shortcuts
 - **Smart pause/resume** behavior
 
 > Note: This is a personalized configuration that may need adjustment for your specific language learning needs.
