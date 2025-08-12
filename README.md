@@ -196,21 +196,33 @@ source ~/.bashrc
 
 ## 🎥 MPV Language Immersion Configuration
 
-**Enhanced media playback for language learning** with dual subtitles, automatic playback, and language-specific presets.
+**Enhanced media playback for language learning** with automatic playback, and language-specific presets.
 
-### 📂 Installation Options
 
-1. **Use included config** (recommended):
-   - Copy files from:
-     ```
-     MyNobaraDotFiles/MPV-Language-Immersion-config-main/
-     ```
-   - To your MPV config directory based on your installation type:
+### **1️⃣ Install Native MPV (Recommended)**
+```bash
+# Install MPV with full codec support
+sudo dnf install mpv ffmpeg
 
-2. **Alternative installation** (manual clone):
-   ```bash
-   git clone https://github.com/MiguelRegueiro/MPV-Language-Immersion-config.git
-   ```
+# For hardware acceleration (Intel/NVIDIA/AMD):
+sudo dnf install libva-intel-driver libva-utils mesa-vdpau-drivers
+```
+
+
+### **2️⃣ Configuration File Locations**
+#### **Native Installation Paths**:
+```
+~/.config/mpv/
+├── mpv.conf           # Main config
+├── input.conf        # Keybindings
+└── scripts/          # Custom Lua scripts
+```
+
+### **3️⃣ Install Language Immersion Config**
+```bash
+# Create config directory
+mkdir -p ~/.config/mpv
+
 
 ### 📌 Installation Paths
 | Installation Type | Config Location                          |
