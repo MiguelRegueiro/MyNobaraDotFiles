@@ -20,6 +20,7 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 ### 🖥️ GNOME
 
 * 🔄 Tweaked **Alt+Tab** behavior & battery indicator in top bar
+* ⌨️ Custom Keyboard Shortcuts
 * 🎨 **WhiteSur theme** + **MacTahoe icons** + **Bibata cursor** for a sleek UI
 * 🖼️ Included wallpaper: `media/wallpaper.jpg`
 * 🧩 Essential GNOME extensions [View recommended extensions in Extension Manager →](#extension-manager-open)
@@ -100,6 +101,28 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 ```bash
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 ```
+
+
+---
+
+### ⌨️ Custom Keyboard Shortcuts
+
+#### 🚀 Application Launchers
+
+| Shortcut       | Application          | Command                          |
+|----------------|----------------------|----------------------------------|
+| `Super + E`    | Files (Nautilus)     | `nautilus --new-window`          |
+| `Super + Enter`| Kitty Terminal       | `kitty`                          |
+| `Super + D`    | Yazi File Manager    | `kitty -e yazi`                  |
+| `Super + B`    | Zen Browser          | `flatpak run app.zen_browser.zen`|
+
+### 🔧 How to Set These Shortcuts
+
+1. Open **Settings** → **Keyboard** → **Keyboard Shortcuts**
+2. Scroll down and click **"View and Customize Shortcuts"**
+3. Select **"Custom Shortcuts"** in the sidebar
+4. Click the **+** button to add each shortcut
+
 
 ---
 
