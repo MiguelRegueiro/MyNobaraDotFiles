@@ -2,7 +2,7 @@
 
 **Custom dotfiles and system tweaks for Nobara Linux** (Fedora-based).
 
-This setup **made using for Nobara**, but it also works on **other Fedora-based distributions**. Some tools and configurations are universal. I even use most of these tools on a separate Fedora system that isn’t meant for gaming, so this guide can serve as a reference for **any Fedora-based setup**.
+This setup **made using for Nobara**, but it also works on **other Fedora-based distributions**. Some tools and configurations are universal. I even use most of these tools on a separate Fedora system that isn’t meant for gaming, so this guide can serve as a reference for **any Fedora-based setup**. [MyServerLab](https://github.com/MiguelRegueiro/MyServerLab.git).
 
 With this setup, you can:
 
