@@ -358,13 +358,9 @@ flatpak install flathub com.github.dynobo.normcap
 🔹 Features
 
     ✅ Captures text from images, videos, PDFs, etc.
-
     ✅ Supports multiple languages
-
     ✅ Automatically copies to clipboard
-
     ✅ Lightweight and fast
-
     ✅ Cross-platform (Linux, Windows, macOS)
 
 > 💡  **Important**  
@@ -374,6 +370,61 @@ flatpak install flathub com.github.dynobo.normcap
 ---
 
 
+
+
+<details>
+<summary><h2>✦ Neovim Configuration</h2></summary>
+✨ Self-contained Neovim setup based on NvChad for a fully-featured coding experience.
+
+🔹 **Installation**
+
+```bash
+# Install Neovim on Fedora
+sudo dnf install neovim
+
+# Clone this repository (if not already done)
+git clone https://github.com/MiguelRegueiro/MyNobaraDotFiles
+
+# Copy the Neovim configuration
+cp -r MyNobaraDotFiles/nvim ~/.config/nvim
+```
+
+🔹 **Usage**
+
+* Launch Neovim with `nvim`
+* Everything is pre-configured—no additional tools needed
+* Explore the file explorer: `Space+e`
+* Navigate buffers: `Shift+h/l`
+* Save files: `Space+w`
+* Quit: `Space+q`
+* Comment code: `gcc` / `gc` (visual mode)
+* Quick insert mode exit: `jk`
+* Trigger completion: `Ctrl+Space`
+
+🔹 **Key Features**
+
+✅ Works without external dependencies (LSP, linters, or formatters)
+✅ Enhanced editing: syntax highlighting, auto-pairs, smart navigation
+✅ File management: file explorer, bufferline, status line
+✅ Coding utilities: comments, surround, text manipulation
+✅ Completion: buffer and path-based
+
+🔹 **Why It’s Portable**
+
+* No external installations required
+* Self-contained Lua plugin setup
+* Uses Neovim built-in features
+* Easy setup—just copy the `nvim` folder
+
+🔹 **Languages Supported**
+
+Lua, Python, JavaScript, TypeScript, HTML, CSS, Java, C/C++, Rust, SQL, JSON, Markdown
+
+> 💡  **Note:** All plugin configuration is in `MyNobaraDotFiles/nvim` folder.
+
+</details>
+
+---
 
 
 
