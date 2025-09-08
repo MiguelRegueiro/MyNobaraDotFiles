@@ -3,7 +3,6 @@ if status is-interactive
     fastfetch
 
     # Abbreviations (better than aliases)
-    abbr -a sshserver "ssh regueiro@100.108.179.88"
     abbr -a update "sudo dnf update && flatpak update"
     abbr -a upgrade "sudo dnf upgrade"
     abbr -a update-ai "~/Docker/update-ai-stack.sh"
