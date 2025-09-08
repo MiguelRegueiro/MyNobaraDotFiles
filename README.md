@@ -469,7 +469,7 @@ Now Yazi will open files using Neovim by default.
 ---
 
 <details>
-<summary><h2>📸 Extension Manager View</h2></summary>
+<summary><h2>📸 Extensions and BlurMyShell settings</h2></summary>
 
 #### Extension Manager Open
 
