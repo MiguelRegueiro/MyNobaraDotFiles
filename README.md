@@ -11,6 +11,7 @@ With this setup, you can:
 * 🎮 Optimize your system for **gaming**
 * 🌐 Set up **remote access**
 * 📝 Support **language learning**
+* 🎇 **Many** other goodies
 
 💡 **Tip:** You’re free to pick and choose the tools, configs, and themes you like. This is my personal setup guide—tweak anything, swap things out, or follow it exactly as I do. **Make it your own!**
 
