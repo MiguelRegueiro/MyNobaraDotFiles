@@ -251,8 +251,15 @@ Located in `media/wallpaper.jpg` - set as your desktop background for the comple
 <details>
 <summary><h2>🌐 Remote Access (SSH) to your server using tailscale or similar</h2></summary>
 
-Once your computer and server are connected to your VPN:
+**Once your computer and server are connected to your VPN:**
+Add this to your config.fish:
+```bash
+    abbr -a sshserver "ssh username@hostname"
+```
 
+
+<details>
+<summary><h3>Or if using bash:</h3></summary>
 Set up an SSH alias for convenience. Add this to `~/.bashrc`:
 
 ```bash
@@ -264,7 +271,7 @@ Apply changes:
 ```bash
 source ~/.bashrc
 ```
-
+</details>
 </details>
 
 ---
