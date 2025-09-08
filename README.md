@@ -409,6 +409,33 @@ yazi
 > 💡 **Tip**
 > Customize your keybindings, themes, and plugins in your config files for the best experience.
 
+
+<details> <summary><h2>⚙️ Set Neovim as Default Editor for Yazi</h2></summary>
+By default, Yazi may open files using Nano. To make it use **Neovim (`nvim`)**, set your environment variables.
+
+**For Fish shell users:**
+
+```fish
+# Remove any existing global EDITOR variable
+set -e EDITOR
+
+# Set Neovim as the default editor
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
+```
+
+✅ Verify:
+
+```fish
+echo $EDITOR
+echo $VISUAL
+```
+
+Both should output: `nvim`
+
+Now Yazi will open files using Neovim by default.
+</details>
+
 </details>
 
 ---
