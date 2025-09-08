@@ -400,6 +400,11 @@ A preview of all installed GNOME extensions inside **Extension Manager**:
 
 ![GNOME Extensions via Extension Manager](media/extensions-view.png)
 
+
+**Blur My shell config** for blured apps in gnome:
+
+![GNOME Extensions via Extension Manager](media/BlurMyShellConfig.png)
+
 </details>
 
 ---
