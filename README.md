@@ -17,10 +17,6 @@ With this setup, you can:
 
 ---
 
-If you want, I can also make a slightly **catchier, more casual version** that fits a GitHub README vibe. Do you want me to do that?
-
----
-
 <details>
 <summary><h2>📦 Summary of the Included Configurations</h2></summary>
 
