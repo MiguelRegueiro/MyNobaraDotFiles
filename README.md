@@ -1,7 +1,23 @@
 # 🚀 MyNobaraDotFiles
 
-**Custom dotfiles and system tweaks tailored for *Nobara Linux*** (Fedora-based).
-This setup enhances your **GNOME desktop**, improves your **terminal experience**, and optimizes your system for **gaming, remote access, and language learning**.
+**Custom dotfiles and system tweaks for Nobara Linux** (Fedora-based).
+
+This setup **made using for Nobara**, but it also works on **other Fedora-based distributions**. Some tools and configurations are universal. I even use most of these tools on a separate Fedora system that isn’t meant for gaming, so this guide can serve as a reference for **any Fedora-based setup**.
+
+With this setup, you can:
+
+* ✨ Enhance your **GNOME desktop**
+* 💻 Improve your **terminal experience**
+* 🎮 Optimize your system for **gaming**
+* 🌐 Set up **remote access**
+* 📝 Support **language learning**
+
+💡 **Tip:** You’re free to pick and choose the tools, configs, and themes you like. This is my personal setup guide—tweak anything, swap things out, or follow it exactly as I do. **Make it your own!**
+
+---
+---
+
+If you want, I can also make a slightly **catchier, more casual version** that fits a GitHub README vibe. Do you want me to do that?
 
 ---
 
@@ -312,59 +328,8 @@ Pre-configured for optimal experience with:
 
 </details>
 
----
-
-<details>
-<summary><h2>🛠️ How to Use This Repo</h2></summary>
-
-1. Clone:
-
-   ```bash
-   git clone https://github.com/MiguelRegueiro/MyNobaraDotFiles
-   ```
-
-2. Copy over desired configs to:
-
-   * `~/.config/kitty/`
-   * `~/.config/starship.toml`
-   * etc.
-
-3. Apply GNOME settings:
-
-> [!IMPORTANT]  
-> Go to 💻 GNOME Desktop Tweaks for this step
-
-</details>
 
 ---
-
-<details>
-<summary><h2>📸 Extension Manager View</h2></summary>
-
-#### Extension Manager Open
-
-A preview of all installed GNOME extensions inside **Extension Manager**:
-
-![GNOME Extensions via Extension Manager](media/extensions-view.png)
-
-</details>
-
----
-
-<details>
-<summary><h2>⚠️ Notes & Compatibility</h2></summary>
-
-* These configs were built and tested on **Nobara Linux**, but most will work on:
-
-  * Fedora GNOME
-  * Other systemd-based distros using GNOME
-* Some parts (like `fstab`, MangoHud) require additional packages like:
-
-  * `ntfs-3g`
-  * `gamemode`
-  * `mangohud`
-
-</details>
 
 <details> <summary><h2>📋 OCR Tool (NormCap)</h2></summary>
 ✨ Optical Character Recognition for Easy Text Capture
@@ -398,11 +363,65 @@ flatpak install flathub com.github.dynobo.normcap
 
     ✅ Cross-platform (Linux, Windows, macOS)
 
-> [!IMPORTANT]  
+> 💡  **Important**  
 > Go to 💻 GNOME Desktop Tweaks and then ⌨️ Custom Keyboard Shortcuts to add a shortcut for the OCR
+</details>
 
+---
 
+<details>
+<summary><h2>🛠️ How to Use This Repo</h2></summary>
+
+1. Clone:
+
+   ```bash
+   git clone https://github.com/MiguelRegueiro/MyNobaraDotFiles
+   ```
+
+2. Copy over desired configs to:
+
+   * `~/.config/kitty/`
+   * `~/.config/starship.toml`
+   * etc.
+
+3. Apply GNOME settings:
+
+> 💡  **Important**  
+> Go to 💻 GNOME Desktop Tweaks for this step
+
+4. Installed the desired tools
 
 </details>
+
+---
+
+<details>
+<summary><h2>📸 Extension Manager View</h2></summary>
+
+#### Extension Manager Open
+
+A preview of all installed GNOME extensions inside **Extension Manager**:
+
+![GNOME Extensions via Extension Manager](media/extensions-view.png)
+
+</details>
+
+---
+
+<details>
+<summary><h2>⚠️ Notes & Compatibility</h2></summary>
+
+* These configs were built and tested on **Nobara Linux**, but most will work on:
+
+  * Fedora GNOME
+  * Other systemd-based distros using GNOME
+* Some parts (like `fstab`, MangoHud) require additional packages like:
+
+  * `ntfs-3g`
+  * `gamemode`
+  * `mangohud`
+
+</details>
+
 
 ---
