@@ -498,8 +498,80 @@ Now Yazi will open files using Neovim by default.
 
 ---
 
+<details>
+<summary><h2>📦 Anki and other flatpack tools</h2></summary>
+✨ Useful applications installed via Flatpak.
+
+✅ Anki: Powerful spaced repetition flashcards
+✅ Zen Browser: Minimalist, distraction-free browsing
+✅ SpeechNote: Quick voice notes and transcription
+
+🔹 **Installation**
+
+```bash
+# Anki - Flashcards
+flatpak install flathub net.ankiweb.Anki
+
+# Zen Browser - Lightweight web browser
+flatpak install flathub app.zen_browser.zen
+
+# SpeechNote - Voice note-taking
+flatpak install flathub net.mkiol.SpeechNote
+```
+
+<summary><h2>🌠 Recommended Anki Add-ons</h2></summary>
+Enhance your Anki experience with these popular add-ons.
+
+🔹 **Add-ons & Installation**
+
+1. **Zoom for Anki 24**  
+   Add-on ID: `1923741581`  
+   *Allows you to zoom in/out on cards for better readability.*
+
+2. **Review Heatmap**  
+   Add-on ID: `1771074083`  
+   *Visualizes your review activity with a heatmap for tracking streaks and performance.*
+
+🔹 **How to Install Add-ons**
+
+1. Open Anki  
+2. Go to `Tools → Add-ons → Get Add-ons`  
+3. Enter the add-on ID and click **OK**  
+4. Restart Anki to activate the add-on
 
 
+<details>
+<summary><h2>🎤 Recommended SpeechNote Voices and how to set up darkmode</h2></summary>
+Enhance your SpeechNote experience with high-quality voices.
+
+🔹 **Recommended Voices**
+
+1. **Kokoro Voices**  
+   *American English recommended:* `af_heart`  
+   [View all Kokoro voices and ratings](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md#american-english)  
+   *Features:*  
+   ✅ Natural-sounding TTS  
+   ✅ Wide variety of voice styles  
+   ✅ Supports multiple languages  
+   ✅ Highly rated by users  
+
+
+🔹 **Dark Mode Settings**
+
+<img src="/media/speachnote.png" alt="SpeechNote Dark Mode">
+
+> 💡 Tip: Experiment with different Kokoro voices for note-taking variety and clarity.
+</details>
+
+</details>
+
+
+
+</details>
+
+
+
+---
 <details>
 <summary><h2>🛠️ How to Use This Repo</h2></summary>
 
