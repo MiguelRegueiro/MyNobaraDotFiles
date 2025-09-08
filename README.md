@@ -333,7 +333,8 @@ Pre-configured for optimal experience with:
    ```bash
    # See GNOME Desktop Tweaks section for commands →
    ```
-   [→ Jump to GNOME Desktop Tweaks](#-gnome-desktop-tweaks)  
+   [→ Jump to GNOME Desktop Tweaks](#-gnome-desktop-tweaks) _(expand section if collapsed)_
+
 
 </details>
 
@@ -403,7 +404,8 @@ flatpak install flathub com.github.dynobo.normcap
 
 View all keyboard shortcuts
 
- [→ Jump to Custom Keyboard Shortcuts](#-custom-keyboard-shortcuts)
+[→ Jump to Custom Keyboard Shortcuts](#custom-keyboard-shortcuts)
+
 </details>
 
 ---
