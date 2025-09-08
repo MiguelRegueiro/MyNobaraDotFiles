@@ -5,35 +5,78 @@ This setup enhances your **GNOME desktop**, improves your **terminal experience*
 
 ---
 
-## 📦 Included Configurations
+<details>
+<summary><h2>📦 Summary of the Included Configurations</h2></summary>
 
 ### 🎛️ Terminal
 
 * 🐱 **Kitty** terminal setup
 * ⭐ **Starship prompt** with custom Nobara/Fedora logos
+* 🐟 **Fish Shell** with useful abbreviations for common comands 
 
 ### 🎮 Gaming
 
-* 🛠️ MangoHud fixes for better in-game overlays
-* 🔌 NTFS game drive auto-mount for seamless access
+* 🛠️ **MangoHud** fixes for better in-game overlays
+* 🔌 **NTFS** game **drive auto-mount** for seamless access and steam compatibility
+* 🔧 **Btop** for a light weight system monitor
 
 ### 🖥️ GNOME
 
 * 🔄 Tweaked **Alt+Tab** behavior & battery indicator in top bar
 * ⌨️ Custom Keyboard Shortcuts
 * 🎨 **WhiteSur theme** + **MacTahoe icons** + **Bibata cursor** for a sleek UI
-* 🖼️ Included wallpaper: `media/wallpaper.jpg`
-* 🧩 Essential GNOME extensions [View recommended extensions in Extension Manager →](#extension-manager-open)
+* 🖼️ Included **wallpaper**: `media/wallpaper.jpg`
+* 🧩 Essential **GNOME extensions** [View recommended extensions in Extension Manager →](#extension-manager-open)
 
 ### 🛠️ Tools
 
-* 🔐 Handy SSH server alias for quick remote access
-* 🎬 MPV player configuration for language immersion
-* 🅰️ Fonts for Anki cards (Chinese and japanese fonts)
+* 🎬 **MPV** player **configuration** for language immersion
+* 🅰️ **Fonts** for **Anki** cards (Chinese and japanese fonts)
+* 📋 **Ocr** support with shortcut
+
+</details>
+
 
 ---
 
-### 📸 GNOME Desktop Screenshot
+<details>
+<summary><h2>⬛ Terminal & CLI Tools</h2></summary>
+
+✨ This setup combines **Kitty**, **Fish**, and **Starship** to create a **fast, modern, and highly customizable terminal experience**:
+
+- **Kitty** → Clean, GPU-accelerated terminal with smooth performance  
+- **Fish** → Intuitive shell with autosuggestions & syntax highlighting for effortless commands  
+- **Starship** → Sleek, informative prompt with Git status, environments, execution time, and more  
+
+🚀 The result is a **minimal yet powerful workflow** optimized for **productivity, readability, and daily use**.
+<br></br>
+
+
+### 🔹 Kitty Terminal
+
+* Config: `~/.config/kitty/kitty.conf`
+
+
+### 🔹 Fish Shell
+
+* Install:  
+  ```bash
+  sudo dnf install fish
+
+* Set as default shell:
+  ```bash
+  chsh -s /usr/bin/fish
+
+ * Config: ~/.config/fish/config.fish
+
+
+### 🔹 Starship Prompt
+
+
+* Install:  
+  ```bash
+  curl -sS https://starship.rs/install.sh | sh
+* Config: `~/.config/starship.toml`
 
 #### 🖥️ Desktop with Terminal
 
@@ -41,29 +84,14 @@ A look at my customized GNOME desktop with `kitty` terminal open:
 
 ![My GNOME Desktop with Kitty](media/screenshot-terminal.png)
 
----
+</details>
 
-
-## 🖥 Terminal & CLI Tools
-
-### 🔹 Kitty Terminal
-
-* Config: `~/.config/kitty/kitty.conf`
-* Clean, minimal, and readable layout optimized for daily use
-
-### 🔹 Starship Prompt
-
-* Config: `~/.config/starship.toml`
-* Features:
-
-  * Git status
-  * Conda environments
-  * Execution time
-  * Battery indicator (on supported setups)
 
 ---
 
-## 📊 Performance Monitoring
+<details>
+<summary><h2>📊 Performance Monitoring</h2></summary>
+
 ### 🔸 MangoHud (for gaming overlays)
 
 * Enable:
@@ -81,11 +109,19 @@ A look at my customized GNOME desktop with `kitty` terminal open:
   * Go to **Visual Settings**
   * Set correct PCI GPU (e.g. `1:00.0` for NVIDIA)
 
+### 🔸 Btop (system resources monitor) 
+* Install:  
+  ```bash
+  sudo dnf install btop
+
+</details>
+
 ---
 
-## 🖼 GNOME Desktop Tweaks
+<details>
+<summary><h2>💻 GNOME Desktop Tweaks</h2></summary>
 
-### 🎛 Behavior Fixes
+### ♣️ Behavior Fixes
 
 **Restore traditional Alt+Tab (individual windows, not grouped by app):**
 
@@ -102,9 +138,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 ```
 
-
----
-
 ### ⌨️ Custom Keyboard Shortcuts
 
 #### 🚀 Application Launchers
@@ -114,7 +147,9 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 | `Super + E`    | Files (Nautilus)     | `nautilus --new-window`          |
 | `Super + Enter`| Kitty Terminal       | `kitty`                          |
 | `Super + D`    | Yazi File Manager    | `kitty -e yazi`                  |
+| `Super + R`    | Btop                 | `kitty -e btop`                  |
 | `Super + B`    | Zen Browser          | `flatpak run app.zen_browser.zen`|
+| `Super + F9`| Ocr      | `/usr/bin/flatpak run com.github.dynobo.normcap`|
 
 ### 🔧 How to Set These Shortcuts
 
@@ -122,9 +157,6 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 2. Scroll down and click **"View and Customize Shortcuts"**
 3. Select **"Custom Shortcuts"** in the sidebar
 4. Click the **+** button to add each shortcut
-
-
----
 
 ### 🎨 Visual Style
 
@@ -160,7 +192,6 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
    | Shell         | WhiteSur-Dark          |
    | Legacy Applications  | WhiteSur-Dark   |
 
-
 ### 🖼️ Included Wallpaper
 ![Default Wallpaper](media/wallpaper.jpg)  
 Located in `media/wallpaper.jpg` - set as your desktop background for the complete look.
@@ -170,10 +201,12 @@ Located in `media/wallpaper.jpg` - set as your desktop background for the comple
 3. Click "+" to add `media/wallpaper.jpg`
 4. Select your new wallpaper
 
+</details>
 
 ---
 
-## 🎮 External Game Drive Setup (NTFS)
+<details>
+<summary><h2>🎮 External Game Drive Setup (NTFS)</h2></summary>
 
 ### Use Case: Mounting a 2TB M.2 external drive for Steam game storage
 
@@ -198,10 +231,14 @@ Located in `media/wallpaper.jpg` - set as your desktop background for the comple
 > ⚠️ **Backup your `/etc/fstab`** before editing. Mistakes can prevent your system from booting.
 >  Do this with caution and at your own risk.
 
+</details>
+
 ---
 
-## 🌐 Remote Access (SSH) to your server using tailscale or  similar
-Onece ur computer and server are connected to ur vpn:
+<details>
+<summary><h2>🌐 Remote Access (SSH) to your server using tailscale or similar</h2></summary>
+
+Once your computer and server are connected to your VPN:
 
 Set up an SSH alias for convenience. Add this to `~/.bashrc`:
 
@@ -215,9 +252,12 @@ Apply changes:
 source ~/.bashrc
 ```
 
+</details>
+
 ---
 
-## 🎥 MPV Language Immersion Configuration
+<details>
+<summary><h2>🎥 MPV Language Immersion Configuration</h2></summary>
 
 **Enhanced media playback for language learning** with automatic playback, and language-specific presets.
 
@@ -228,7 +268,6 @@ source ~/.bashrc
 | Flatpak           | `~/.var/app/io.mpv.Mpv/config/mpv/`     |
 | Windows           | `%APPDATA%\mpv\`                        |
 
-
 ### **1️⃣ Install Native MPV (Recommended)**
 ```bash
 # Install MPV with full codec support
@@ -237,7 +276,6 @@ sudo dnf install mpv ffmpeg
 # For hardware acceleration (Intel/NVIDIA/AMD):
 sudo dnf install libva-intel-driver libva-utils mesa-vdpau-drivers
 ```
-
 
 ### **2️⃣ Configuration File Locations**
 #### **Native Installation Paths**:
@@ -253,7 +291,6 @@ sudo dnf install libva-intel-driver libva-utils mesa-vdpau-drivers
 # Create config directory
 mkdir -p ~/.config/mpv
 ```
-
 
 ### 🌍 Language Support
 Pre-configured for optimal experience with:
@@ -273,10 +310,12 @@ Pre-configured for optimal experience with:
 
 > Note: This is a personalized configuration that may need adjustment for your specific language learning needs.
 
+</details>
 
-Would you like me to make any additional adjustments to this section?
+---
 
-## 🛠️ How to Use This Repo
+<details>
+<summary><h2>🛠️ How to Use This Repo</h2></summary>
 
 1. Clone:
 
@@ -294,11 +333,14 @@ Would you like me to make any additional adjustments to this section?
    ```bash
    # See GNOME Desktop Tweaks section for commands →
    ```
-   [→ Jump to GNOME Tweaks](#-gnome-desktop-tweaks)
+   [→ Jump to GNOME Desktop Tweaks](#-gnome-desktop-tweaks)  
+
+</details>
 
 ---
 
-
+<details>
+<summary><h2>📸 Extension Manager View</h2></summary>
 
 #### Extension Manager Open
 
@@ -306,10 +348,12 @@ A preview of all installed GNOME extensions inside **Extension Manager**:
 
 ![GNOME Extensions via Extension Manager](media/extensions-view.png)
 
+</details>
+
 ---
 
-
-## ⚠️ Notes & Compatibility
+<details>
+<summary><h2>⚠️ Notes & Compatibility</h2></summary>
 
 * These configs were built and tested on **Nobara Linux**, but most will work on:
 
@@ -320,5 +364,46 @@ A preview of all installed GNOME extensions inside **Extension Manager**:
   * `ntfs-3g`
   * `gamemode`
   * `mangohud`
+
+</details>
+
+<details> <summary><h2>📋 OCR Tool (NormCap)</h2></summary>
+✨ Optical Character Recognition for Easy Text Capture
+
+NormCap is a cross-platform OCR tool that lets you quickly capture text from anywhere on your screen.
+🔹 Installation
+bash
+
+# Install via Flatpak (recommended)
+flatpak install flathub com.github.dynobo.normcap
+
+🔹 Usage
+
+    Launch NormCap using the keyboard shortcut: Super + F9
+
+    Select an area on your screen containing text
+
+    Text is automatically copied to your clipboard
+
+    Paste anywhere you need the text
+
+🔹 Features
+
+    ✅ Captures text from images, videos, PDFs, etc.
+
+    ✅ Supports multiple languages
+
+    ✅ Automatically copies to clipboard
+
+    ✅ Lightweight and fast
+
+    ✅ Cross-platform (Linux, Windows, macOS)
+
+🔹 Keyboard Shortcut
+
+View all keyboard shortcuts
+
+ [→ Jump to Custom Keyboard Shortcuts](#-custom-keyboard-shortcuts)
+</details>
 
 ---
