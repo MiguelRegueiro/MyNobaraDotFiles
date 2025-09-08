@@ -507,6 +507,7 @@ Now Yazi will open files using Neovim by default.
 ✅ Anki: Powerful spaced repetition flashcards
 ✅ Zen Browser: Minimalist, distraction-free browsing
 ✅ SpeechNote: Quick voice notes and transcription
+✅ qBittorrent: Powerful, ad-free torrent client
 
 🔹 **Installation**
 
@@ -519,6 +520,9 @@ flatpak install flathub app.zen_browser.zen
 
 # SpeechNote - Voice note-taking
 flatpak install flathub net.mkiol.SpeechNote
+
+# qBittorrent - Torrent client
+flatpak install flathub org.qbittorrent.qBittorrent
 ```
 
 <summary><h2>🌠 Recommended Anki Add-ons</h2></summary>
