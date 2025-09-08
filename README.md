@@ -330,11 +330,9 @@ Pre-configured for optimal experience with:
    * etc.
 
 3. Apply GNOME settings:
-   ```bash
-   # See GNOME Desktop Tweaks section for commands →
-   ```
-   [→ Jump to GNOME Desktop Tweaks](#-gnome-desktop-tweaks) _(expand section if collapsed)_
 
+> [!IMPORTANT]  
+> Go to 💻 GNOME Desktop Tweaks for this step
 
 </details>
 
@@ -400,11 +398,10 @@ flatpak install flathub com.github.dynobo.normcap
 
     ✅ Cross-platform (Linux, Windows, macOS)
 
-🔹 Keyboard Shortcut
+> [!IMPORTANT]  
+> Go to 💻 GNOME Desktop Tweaks and then ⌨️ Custom Keyboard Shortcuts to add a shortcut for the OCR
 
-View all keyboard shortcuts
 
-[→ Jump to Custom Keyboard Shortcuts](#custom-keyboard-shortcuts)
 
 </details>
 
