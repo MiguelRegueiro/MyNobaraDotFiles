@@ -15,7 +15,6 @@ With this setup, you can:
 💡 **Tip:** You’re free to pick and choose the tools, configs, and themes you like. This is my personal setup guide—tweak anything, swap things out, or follow it exactly as I do. **Make it your own!**
 
 ---
----
 
 If you want, I can also make a slightly **catchier, more casual version** that fits a GitHub README vibe. Do you want me to do that?
 
