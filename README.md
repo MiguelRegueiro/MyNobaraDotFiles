@@ -94,7 +94,7 @@ With this setup, you can:
 
 A look at my customized GNOME desktop with `kitty` terminal open:
 
-![My GNOME Desktop with Kitty](media/screenshot-terminal.png)
+![My GNOME Desktop with Kitty](media/screenshot-terminal-blur.png)
 
 </details>
 
