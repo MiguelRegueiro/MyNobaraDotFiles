@@ -46,6 +46,7 @@ With this setup, you can:
 * 🅰️ **Fonts** for **Anki** cards (Chinese and japanese fonts)
 * 📋 **Ocr** support with shortcut
 * 📂 **Yazi** for llighting fast file search and file browser
+* 📦 **Anki** and other **flatpack** tools
 
 </details>
 
