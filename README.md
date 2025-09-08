@@ -45,6 +45,7 @@ With this setup, you can:
 * 🎬 **MPV** player **configuration** for language immersion
 * 🅰️ **Fonts** for **Anki** cards (Chinese and japanese fonts)
 * 📋 **Ocr** support with shortcut
+* 📂 **Yazi** for llighting fast file search and file browser
 
 </details>
 
@@ -364,6 +365,55 @@ flatpak install flathub com.github.dynobo.normcap
 </details>
 
 ---
+
+
+
+
+
+<details> <summary><h2>📂 Yazi</h2></summary>
+✨ Minimal and Highly Customizable Text Editor
+
+Yazi is a lightweight text editor designed for fast editing and simplicity. You can fully customize it using your own config files.
+
+🔹 Installation
+
+```bash
+# Install via DNF
+sudo dnf install yazi
+```
+
+🔹 Configuration
+
+My configuration files are included in this repository under the folder: `yazi`.
+You can copy them to your Yazi config directory to use my setup:
+
+```bash
+cp -r yazi/* ~/.config/yazi/
+```
+
+🔹 Usage
+
+```bash
+# Launch Yazi from terminal
+yazi
+```
+
+🔹 Features
+
+✅ Lightweight and minimal
+✅ Fully configurable via dotfiles
+✅ Syntax highlighting for multiple languages
+✅ Fast startup and low resource usage
+✅ Ideal for both coding and note-taking
+
+> 💡 **Tip**
+> Customize your keybindings, themes, and plugins in your config files for the best experience.
+
+</details>
+
+---
+
+
 
 <details>
 <summary><h2>🛠️ How to Use This Repo</h2></summary>
