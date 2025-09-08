@@ -160,6 +160,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 | `Super + E`    | Files (Nautilus)     | `nautilus --new-window`          |
 | `Super + Enter`| Kitty Terminal       | `kitty`                          |
 | `Super + D`    | Yazi File Manager    | `kitty -e yazi`                  |
+| `Super + W`    | Neovim               | `kitty -e nvim`                  |
 | `Super + R`    | Btop                 | `kitty -e btop`                  |
 | `Super + B`    | Zen Browser          | `flatpak run app.zen_browser.zen`|
 | `Super + F9`| Ocr      | `/usr/bin/flatpak run com.github.dynobo.normcap`|
