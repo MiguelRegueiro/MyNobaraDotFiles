@@ -60,7 +60,8 @@ With this setup, you can:
 
 - **Kitty** → Clean, GPU-accelerated terminal with smooth performance  
 - **Fish** → Intuitive shell with autosuggestions & syntax highlighting for effortless commands  
-- **Starship** → Sleek, informative prompt with Git status, environments, execution time, and more  
+- **Starship** → Sleek, informative prompt with Git status, environments, execution time, and more
+- - **Bat** → Better cat command
 
 🚀 The result is a **minimal yet powerful workflow** optimized for **productivity, readability, and daily use**.
 <br></br>
@@ -91,6 +92,15 @@ With this setup, you can:
   ```bash
   curl -sS https://starship.rs/install.sh | sh
 * Config: `~/.config/starship.toml`
+
+### 🔹 Simple useful tools
+
+Bat (better cat command)
+* Install:  
+  ```bash
+  sudo dnf install bat
+  ```
+
 
 #### 🖥️ Desktop with Terminal
 
